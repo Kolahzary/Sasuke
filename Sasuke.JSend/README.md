@@ -1,0 +1,1 @@
+﻿Partially ported from https://github.com/dcastro/JSendWebApi
