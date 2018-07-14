@@ -2,6 +2,17 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <NuspecFile>Sasuke.JSend.nuspec</NuspecFile>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Shadman Kolahzary</Authors>
+    <Description>JSendControllerBase class and Filters for standard JSend output, Fully compatible with the latest version of AspNetCore 2.1</Description>
+    <Product>Sasuke.JSend</Product>
+    <PackageLicenseUrl>https://github.com/Kolahzary/Sasuke/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/Kolahzary/Sasuke</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <Version>1.0.7</Version>
+    <NeutralLanguage>en</NeutralLanguage>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -9,11 +20,9 @@
   </PropertyGroup>
   
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.0" />
-    <PackageReference Include="NuGet.Build.Tasks.Pack" Version="4.6.2" />
   </ItemGroup>
 </Project>

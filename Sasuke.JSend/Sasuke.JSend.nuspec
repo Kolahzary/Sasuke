@@ -1,19 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <metadata>
-		<!-- Required elements-->
-		<id>Sasuke.JSend</id>
-		<version>1.0.5</version>
-		<description>JSendControllerBase class and Filters for standard JSend output, Fully compatible with the latest version of AspNetCore 2.1</description>
-		<authors>Shadman Kolahzary</authors>
+  <metadata>
+    <!-- Required elements-->
+    <id>Sasuke.JSend</id>
+    <version>1.0.6</version>
+    <description>JSendControllerBase class and Filters for standard JSend output, Fully compatible with the latest version of AspNetCore 2.1</description>
+    <authors>Shadman Kolahzary</authors>
+    <owners>Shadman Kolahzary</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
 
-		<!-- Optional elements -->
-		<tags>Sasuke JSend Filters Json DotNetCore AspNetCore Core AspCore</tags>
+    <!-- Optional elements -->
+    <tags>Sasuke JSend Filters Json DotNetCore AspNetCore Core AspCore</tags>
 
-		<dependencies>
-			<dependency id="Microsoft.AspNetCore.App" version="2.1.1" />
-		</dependencies>
-    </metadata>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.1">
+        <dependency id="Microsoft.AspNetCore.App" version="2.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
 
-    <!-- Optional 'files' node -->
+  <!-- Optional 'files' node -->
 </package>
