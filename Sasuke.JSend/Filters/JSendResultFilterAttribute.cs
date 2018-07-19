@@ -11,8 +11,10 @@ namespace Sasuke.JSend.Filters
         {
             if (context.Result is IJSendResult<IJSendResponse>)
                 return;
-
-            if (context.Result is JsonResult)
+    
+            if(context.Result is BadRequestObjectResult)
+                context.Result = new JSendBadRequestResult((context.Result as BadRequestObjectResult).Value);
+            else if (context.Result is JsonResult)
                 context.Result = new JSendOkResult((context.Result as JsonResult).Value);
             else if (context.Result is ObjectResult)
                 context.Result = new JSendOkResult((context.Result as ObjectResult).Value);

@@ -8,8 +8,8 @@ namespace Sasuke.JSend.Results
 {
     public class JSendFailResult : JSendResult<FailResponse>
     {
-        public JSendFailResult(string reason, HttpStatusCode statusCode)
-            : base(new FailResponse(reason), statusCode)
+        public JSendFailResult(object data, HttpStatusCode statusCode)
+            : base(new FailResponse(data), statusCode)
         {
         }
     }

@@ -5,8 +5,8 @@ namespace Sasuke.JSend.Results
 {
     public class JSendBadRequestResult : JSendFailResult
     {
-        public JSendBadRequestResult(string reason = "Bad request.")
-            : base(reason, HttpStatusCode.BadRequest)
+        public JSendBadRequestResult(object data = null)
+            : base(data ?? "Bad request.", HttpStatusCode.BadRequest)
         {
         }
     }
