@@ -1,5 +1,4 @@
-﻿using Sasuke.JSend.Responses;
-using System.Net;
+﻿using System.Net;
 
 namespace Sasuke.JSend.Results
 {

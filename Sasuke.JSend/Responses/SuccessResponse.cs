@@ -1,7 +1,7 @@
-﻿namespace Sasuke.JSend.Responses
-{
-    using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 
+namespace Sasuke.JSend.Responses
+{
     /// <summary>A JSend success response.</summary>
     public class SuccessResponse : IJSendResponse
     {

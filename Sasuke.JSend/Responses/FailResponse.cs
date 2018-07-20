@@ -1,8 +1,8 @@
-﻿namespace Sasuke.JSend.Responses
-{
-    using System;
-    using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 
+namespace Sasuke.JSend.Responses
+{
     /// <summary>A JSend fail response.</summary>
     public class FailResponse : IJSendResponse
     {
@@ -10,8 +10,7 @@
         /// <param name="data">A wrapper for the details of why the request failed.</param>
         public FailResponse(object data)
         {
-            if (data == null) throw new ArgumentNullException(nameof(data));
-            Data = data;
+            Data = data ?? throw new ArgumentNullException(nameof(data));
         }
 
         /// <summary>Gets the status of this response, always set to "fail".</summary>

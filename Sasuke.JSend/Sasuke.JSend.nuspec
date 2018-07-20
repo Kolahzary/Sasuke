@@ -3,7 +3,7 @@
     <metadata>
 		<!-- Required elements-->
 		<id>Sasuke.JSend</id>
-		<version>1.0.5</version>
+		<version>1.0.6</version>
 		<description>JSendControllerBase class and Filters for standard JSend output, Fully compatible with the latest version of AspNetCore 2.1</description>
 		<authors>Shadman Kolahzary</authors>
 

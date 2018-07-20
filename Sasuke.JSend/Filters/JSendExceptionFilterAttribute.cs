@@ -1,11 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
-using Sasuke.JSend.Responses;
-using Sasuke.JSend.Results;
-using System.Net;
+﻿using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Sasuke.JSend.Filters
 {
+    using Results;
+
     public class JSendExceptionFilterAttribute : ExceptionFilterAttribute
     {
         public override void OnException(ExceptionContext context)

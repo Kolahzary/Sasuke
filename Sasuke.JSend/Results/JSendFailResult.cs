@@ -1,11 +1,8 @@
-﻿using Sasuke.JSend.Responses;
-using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Text;
+﻿using System.Net;
 
 namespace Sasuke.JSend.Results
 {
+    using Responses;
     public class JSendFailResult : JSendResult<FailResponse>
     {
         public JSendFailResult(object data, HttpStatusCode statusCode)

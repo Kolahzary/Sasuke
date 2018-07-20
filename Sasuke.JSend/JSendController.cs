@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Localization;
 using Sasuke.JSend.Filters;
 using Sasuke.JSend.Results;
 using System.Diagnostics.Contracts;
-using System.Runtime.CompilerServices;
 
 namespace Sasuke.JSend
 {
@@ -12,6 +10,8 @@ namespace Sasuke.JSend
     [JSendResultFilter]
     public abstract class JSendControllerBase : ControllerBase
     {
+        [Pure]
+        protected internal JSendNoContentResult JSendNoContent() => new JSendNoContentResult();
         [Pure]
         protected internal JSendOkResult JSendOk(object data) => new JSendOkResult(data);
 

@@ -1,11 +1,8 @@
-﻿using Sasuke.JSend.Responses;
-using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Text;
+﻿using System.Net;
 
 namespace Sasuke.JSend.Results
 {
+    using Responses;
     public class JSendErrorResult : JSendResult<ErrorResponse>
     {
         public JSendErrorResult(string message, HttpStatusCode statusCode)

@@ -1,8 +1,8 @@
-﻿namespace Sasuke.JSend.Responses
-{
-    using System;
-    using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 
+namespace Sasuke.JSend.Responses
+{
     /// <summary>
     /// A JSend error response.
     /// </summary>
