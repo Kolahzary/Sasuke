@@ -2,14 +2,11 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <NuspecFile>Sasuke.JSend.nuspec</NuspecFile>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugType>Full</DebugType>
-  </PropertyGroup>
-  
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   
   <ItemGroup>
